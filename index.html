@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siber Hava Durumu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hava-kapsayici">
+        <h2>🌤️ Siber Hava Durumu</h2>
+        
+        <div class="arama-kutusu">
+            <input type="text" id="sehir-input" placeholder="Şehir adı giriniz... (Örn: Istanbul)">
+            <button id="ara-btn">Ara</button>
+        </div>
+
+        <div id="hava-kart" class="hava-kart gizli">
+            <h1 id="sehir-adi">İstanbul</h1>
+            <p id="tarih">--</p>
+            <div class="derece-kapsayici">
+                <span id="derece">25</span>°C
+            </div>
+            <p id="durum">Güneşli</p>
+            
+            <div class="detaylar">
+                <div class="detay">
+                    <span>💧 Nem</span>
+                    <strong id="nem">%60</strong>
+                </div>
+                <div class="detay">
+                    <span>💨 Rüzgar</span>
+                    <strong id="ruzgar">12 km/s</strong>
+                </div>
+            </div>
+        </div>
+
+        <p id="hata-mesaji" class="hata gizli">Şehir bulunamadı! Lütfen tekrar deneyin.</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
